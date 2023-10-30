@@ -1,0 +1,130 @@
+/* .avatar {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+  *{
+    box-sizing: 0;
+    padding: 0;
+}
+.page{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,0,32);
+    background: linear-gradient(90deg, rgba(0,0,32,1) 8%, rgba(61,0,66,1) 29%, rgba(61,0,66,1) 81%, rgba(0,0,32,1) 100%);
+    background-size: 150% 120%;
+    animation: pageanimation 4s alternate infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes pageanimation {
+    0% {
+      background-position: 0 0;
+    }
+    25% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0;
+    }
+   
+  }
+.MAincontainer{
+    width: 80vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    opacity: 0.6;
+    border-radius: 5vw;
+}
+.Navcontainer{
+    width: 80vw;
+    height: 10vh;
+    color: #00C4EF;
+    font-family: cursive;
+    
+}
+.contentContainer{
+    width: 80vw;
+    height: 70vh;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+}
+.leftside{
+    width: 50vw;
+    
+    color: #FF71B1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightside{
+    width: 50vw;
+    color: #00C4EF;
+    height: 70vh; /* Set a fixed height for the scrollable container */
+    overflow: auto;
+    
+}
+ul{
+    list-style: none;
+}
+.form{
+    margin-bottom: 2vh;
+    width: 10vw;
+    height: 2vh;
+    background-color: #FF71B1;
+    border-color: #FF71B1;
+    border-radius: 0.4vw;
+}
+.form2{
+    margin-bottom: 2vh;
+    width: 5vw;
+    height: 4vh;
+    background-color: #00C4EF;
+    border-color: #00C4EF;
+    border-radius: 0.4vw;
+}
+
+
+.editbutton{
+    width: 3vw;
+    height: 3vh;
+    background-color: #FF71B1;
+    border-color: #00C4EF;
+    border-radius: 0.4vw;
+}
+.deletebutton{
+    width: 3vw;
+    height: 3vh;
+    background-color: red;
+    border-color: #00C4EF;
+    border-radius: 0.4vw;
+}
+button{
+    width: 3vw;
+    height: 3vh;
+}
+.buttons{
+    margin-left: 1vw;
+}
